@@ -21,8 +21,13 @@ public IOngoingFormModifier Create(BattleFormReferences references)
     return _modifierInstance;
 }
 ```
+While this works, it is an odd behaviour. With more time, I'd split the modifier into a template with data and an instanced object. On `IOngoingFormModifier.Create(...)`, the object would be created and injected the data. 
 
 ## Battle Form Controllers
+To allow for rapid debugging, I have the debug scene spawned with a prefab variant of the character. These "dummy characters" as I've named them, use the same forms and tech as the player character, with one key exception: the battle form controller. To decouple Battle Form logic from the player control of said inputs, a component must implement `IBattleFormController` as to allow as a gateway between the player andn the Battle Form system. Two have been created for this project:
+- `BattleFormPlayerController` : Binds number key inputs to form switching, as well as bining left mouse button the primary ability callback that modifiers subscribe to.
+- `BattleFormDebugController ` : Chooses a form on start up and then invokes the primary ability callback every so often to activate any abilties modifiers might have added.
+This allows future work to add AI controllers that can choose states depending on certain criteria, without having to change the BattleForm system. 
 
 ## Event Driven
 No code use Update() as everything is event based. Only systems happening every frame are GUI drawing if the debug overlay is active, and Gizmo drawing for seeing melee attack colliders.
