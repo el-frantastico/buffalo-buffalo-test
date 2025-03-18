@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d784a1fd9d5eccc4f964263aa7ff8f22, type: 3}
+  m_Name: BattleForm_Reset
+  m_EditorClassIdentifier: 
+  _formName: 
+  _instantFormModifiers:
+  - {fileID: 11400000, guid: 4e87ab2e6e57aa5428c7e4891bac7dd4, type: 2}
+  - {fileID: 11400000, guid: 8c5a52518514c4f46b414e5d3ae6d806, type: 2}
+  - {fileID: 11400000, guid: d1c4832b0b1351c4fa9683386826f025, type: 2}
+  - {fileID: 11400000, guid: 3668a91c97d0a7a498feb0bf3f596964, type: 2}
+  _ongoingFormModifiers: []

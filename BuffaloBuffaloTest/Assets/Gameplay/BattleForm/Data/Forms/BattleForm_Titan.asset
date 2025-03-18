@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d784a1fd9d5eccc4f964263aa7ff8f22, type: 3}
+  m_Name: BattleForm_Titan
+  m_EditorClassIdentifier: 
+  _formName: Titan
+  _instantFormModifiers:
+  - {fileID: 11400000, guid: 93672b1b5fefc4446bdba07c48da6233, type: 2}
+  - {fileID: 11400000, guid: 2a47ea8646598f0468dc44d07731fdfe, type: 2}
+  _ongoingFormModifiers:
+  - {fileID: 11400000, guid: 32e1310d2a2489a49a1e9bd5e6b9eaf8, type: 2}
