@@ -29,5 +29,5 @@ To allow for rapid debugging, I have the debug scene spawned with a prefab varia
 - `BattleFormDebugController ` : Chooses a form on start up and then invokes the primary ability callback every so often to activate any abilties modifiers might have added.
 This allows future work to add AI controllers that can choose states depending on certain criteria, without having to change the BattleForm system. 
 
-## Event Driven
-No code use Update() as everything is event based. Only systems happening every frame are GUI drawing if the debug overlay is active, and Gizmo drawing for seeing melee attack colliders.
+## Event Driven Design
+No code uses Update() as everything is event based. Only systems happening every frame are GUI drawing if the debug overlay is active, and Gizmo drawing for seeing melee attack colliders if the Simple Melee modifier has been added.
