@@ -1,7 +1,8 @@
 # buffalo-buffalo-test
-Tech test submission for Buffalo Buffalo by Francisco Martin.
+Tech test submission for Buffalo Buffalo by Francisco Martin. Video demo link here: https://youtu.be/CZCUarl9-zw
 
-Video demo link here: https://youtu.be/CZCUarl9-zw
+> [!IMPORTANT]  
+> All scripts and assets within the ExternalAssets directory are not created by me and should be ignored for proper review. These were added to have some visuals and to skip boilerplate code for third person control and movement.
 
 ## Character States (a.k.a Battle Forms)
 This submission makes creates a highly modular fighting state system called "Battle Forms". Each form is ScriptableObject `BattleFormAsset` defined by `IInstantFormModifier` and `IOngoingFormModifier`. Modifiers are meant to be shared among forms, as to allow reduced asset count and universal behaviors accross forms. 
